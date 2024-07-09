@@ -1,0 +1,352 @@
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+
+/* App styles */
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navbar styles */
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-nav.nav-item {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.fork-btn {
+  margin-left: auto;
+}
+
+/* Home section styles */
+
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+}
+
+.home-content {
+  text-align: center;
+}
+
+.home-content-t {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.home-header-t {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  margin-top: -15rem !important;
+}
+
+.home-header h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.home-text p {
+  font-family: 'DM Sans';
+  font-size: 1.4rem;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 5rem;
+}
+
+.second-paragraph {
+  margin-top: 2.5rem !important; /* Adjust this value to move the second paragraph up or down */
+}
+
+.third-paragraph {
+  margin-top: 1.6rem !important; /* Adjust this value to move the second paragraph up or down */
+}
+
+.feature-list,
+.application-list {
+  list-style-position: inside; /* Ensures the list items align with the container's width */
+  padding-left: 0; /* Remove default padding */
+}
+
+.feature-list li,
+.application-list li {
+  text-align: left; /* Align list items to the left */
+  margin-bottom: 0.8rem; /* Adjust spacing between list items */
+  font-size: 1.2rem;
+}
+
+.home-text-t p {
+  font-family: 'DM Sans';
+  font-size: 1.2rem;
+  text-align: left;
+  margin-bottom: 80px;
+  margin-top: 1rem;
+}
+
+.home-text-t h3 {
+  margin-top: 2rem;
+  color:#8911c0;
+}
+
+
+.heading {
+  transform: scale(1.2);
+}
+
+.heading-name {
+  font-size: 5.0rem;
+}
+
+.wave {
+  margin-left: 10px;
+}
+
+
+.main-name {
+  font-size: 4.2rem;
+  font-weight: bold;
+  color: #8911c0;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.main-name-t {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #8911c0;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.home-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.home-buttons button {
+  border: 2px solid #7A288A;
+  background-color: transparent;
+  color: #7A288A;
+  padding: 10px 40px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  margin: 0 25px;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+}
+
+.home-image img {
+  width: 65%;
+  height: auto;
+  border-radius: 90px;
+  overflow: hidden;
+  margin-right: -20px;
+  margin-top: 70px;
+}
+
+.home-image-t4 img {
+  width: 100%;
+  height: auto;
+  border-radius: 90px;
+  overflow: hidden;
+  margin-right: -20px;
+  margin-top: 70px;
+}
+
+.home-image-t5 img {
+  width: 95%;
+  height: auto;
+  border-radius: 90px;
+  overflow: hidden;
+  margin-right: -20px;
+  margin-top: 70px;
+}
+
+
+.home-image-t img {
+  width: 60%;
+  height: auto;
+  border-radius: 90px;
+  overflow: hidden;
+  margin-top: -53rem
+}
+
+/* Media queries */
+
+@media (max-width: 1200px) {
+  .home-header h1 {
+    font-size: 2rem;
+  }
+
+  .home-header {
+    margin-top: 30px; /* Adjust this value as needed */
+  }
+
+  .home-text p {
+    font-size: 1.2rem;
+  }
+  .main-name {
+    font-size: 3.5rem;
+  }
+  .home-buttons button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .home-header h1 {
+    font-size: 1.8rem;
+  }
+  .home-text p {
+    font-size: 1rem;
+  }
+  .main-name {
+    font-size: 3rem;
+  }
+  .home-buttons button {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-header h1 {
+    font-size: 1.5rem;
+  }
+  .home-text p {
+    font-size: 0.8rem;
+  }
+  .main-name {
+    font-size: 2.5rem;
+  }
+  .home-buttons button {
+    font-size: 0.6rem;
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-header h1 {
+    font-size: 1.2rem;
+    margin-right: 2.3rem;
+  }
+
+  .home-header {
+    margin-top: -180px !important;
+    text-align: center !important; /* Adjust this value as needed */
+  }
+
+  .home-text p {
+    font-size: 0.8rem;
+    margin-top:2rem !important;
+  }
+
+  .home-text-t p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .main-name {
+    font-size: 2rem;
+  }
+
+  .home-image img {
+    margin-right: 1rem !important;
+    margin-top: 1rem !important;
+    border-radius: 50px;
+  }
+
+  .home-image-t img {
+    margin-top: -2rem !important;
+    border-radius: 50px;
+  }
+
+  .feature-list,
+  .application-list {
+  list-style-position: inside; /* Ensures the list items align with the container's width */
+  padding-left: 0; /* Remove default padding */
+}
+
+.feature-list li,
+.application-list li {
+  text-align: left; /* Align list items to the left */
+  margin-bottom: 0.8rem; /* Adjust spacing between list items */
+  font-size: 0.8rem;
+}
+
+  .home-buttons button {
+    font-size: 0.4rem;
+    margin: 0 20px;
+  }
+}
