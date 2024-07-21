@@ -1,4 +1,4 @@
-![Cover Photo](assets/img1.photo.png)
+![Cover Photo](assets/img1.png)
 
 # Mental Health Chatbot
 
