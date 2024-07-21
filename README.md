@@ -1,4 +1,4 @@
-![Cover Photo](assets/cover-photo.png)
+![Cover Photo](assets/img1.photo.png)
 
 # Mental Health Chatbot
 
@@ -142,6 +142,8 @@ Ashley is a mental health chatbot designed to offer support and companionship to
 - `huggingface_hub`
 - `textblob`
 - `langchain`
+
+![Cover Photo](assets/img2.png)
 - `python-dotenv`
 
 ## License
