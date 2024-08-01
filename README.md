@@ -145,7 +145,3 @@ Ashley is a mental health chatbot designed to offer support and companionship to
 
 ![Cover Photo](images/img2.png)
 - `python-dotenv`
-
-## License
-
-This project is licensed under the ISC License.
