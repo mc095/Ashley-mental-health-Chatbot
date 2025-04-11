@@ -85,7 +85,7 @@ function NavBar() {
 
               <Nav.Item>
               <Nav.Link
-                href="https://huggingface.co/spaces/Ganesh89/Ashley-Depression-Support-Chatbot"
+                href="https://ashley-72pr.onrender.com/"
                 target="_blank"
                 rel="noreferrer"
               > <FaGhost style={{ marginBottom: "2px" }}/> Get Started
