@@ -1,64 +1,56 @@
+# Ashley - Your Kawaii Mental Health Companion 🌸
+
 ![Cover Photo](images/img1.png)
 
-# Mental Health Chatbot
+## Overview 💫
 
-## Overview
+Ashley is my passion project - a kawaii-styled mental health chatbot designed to be your digital companion. Built with Chainlit and powered by Groq's advanced language model, Ashley provides empathetic responses and creates a safe space for comforting conversations.
 
-Ashley is a mental health chatbot designed to offer support and companionship to users. Built with Streamlit and leveraging the Hugging Face Phi-3 model, Ashley provides empathetic responses and engages users in comforting conversations.
+![Cover Photo](images/img2.png)
 
-## Table of Contents
+## Features 🌟
 
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Running the Application](#running-the-application)
-- [Scripts](#scripts)
-- [Dependencies](#dependencies)
-- [License](#license)
+- 💕 Kawaii-themed interface for a friendly, approachable experience
+- 🎭 Advanced sentiment analysis to understand your emotions
+- 💬 Real-time chat with empathetic responses
+- 🎨 Customizable layout with styled components
+- 🤝 Engaging conversations that feel personal and meaningful
 
-## Features
-
-- Empathetic and supportive responses
-- Sentiment analysis to tailor responses
-- Customizable layout with styled components
-- Real-time chat interactions
-
-## Technologies Used
+## Technologies Used 🛠️
 
 ### Frontend
 
-- React
-- Bootstrap
-- React Icons
-- React Router DOM
-- Typewriter Effect
-- React GitHub Calendar
-- React Parallax Tilt
-- Web Vitals
+- React (for building our beautiful UI)
+- Bootstrap (for responsive design)
+- React Icons (for kawaii visual elements)
+- React Router DOM (for seamless navigation)
+- Typewriter Effect (for engaging animations)
+- React Parallax Tilt (for interactive elements)
+- Web Vitals (for performance monitoring)
 
 ### Backend
 
-- Streamlit
-- Hugging Face API
-- LangChain
-- TextBlob
-- dotenv
+- Chainlit (for creating our chat interface)
+- Groq API (powering Ashley's intelligent responses)
+- TextBlob & NLTK (for sentiment analysis)
+- LangChain (for conversation management)
+- Python dotenv (for secure configuration)
 
-## Getting Started
+## Getting Started 
 
 ### Prerequisites
 
 - Python (v3.7 or higher)
 - Node.js (v14 or higher)
-- Hugging Face API Key
+- Groq API Key
 
 ### Installation
 
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/chatbot.git
-    cd chatbot
+    git clone https://github.com/your-username/kawaii-chatbot.git
+    cd kawaii-chatbot
     ```
 
 2. **Install frontend dependencies:**
@@ -71,77 +63,62 @@ Ashley is a mental health chatbot designed to offer support and companionship to
 3. **Install backend dependencies:**
 
     ```bash
-    cd ../server
+    cd ../chatbot/ashBot
     pip install -r requirements.txt
     ```
 
-4. **Create a `.env` file in the server directory and add the following:**
+4. **Set up your environment:**
+
+   Create a `.env` file in the ashBot directory:
 
     ```env
-    HF_API_KEY=your_hugging_face_api_key
+    GROQ_API_KEY=your_groq_api_key
     ```
 
-## Running the Application
+## Running Ashley 
+
+![Cover Photo](images/img3.png)
 
 ### Frontend
 
-1. **Start the React development server:**
-
-    ```bash
-    cd client
-    npm start
-    ```
+```bash
+cd client
+npm start
+```
 
 ### Backend
 
-1. **Start the Streamlit application:**
+```bash
+cd chatbot/ashBot
+chainlit run app.py
+```
 
-    ```bash
-    cd server
-    streamlit run app.py
-    ```
+## Project Structure 📁
 
-## Scripts
+```
+kawaii-chatbot/
+├── client/              # React frontend
+├── chatbot/
+│   └── ashBot/         # Chainlit backend
+├── images/             # UI assets
+└── README.md
+```
+
+## Development Scripts 🛠️
 
 ### Frontend
 
-- `npm start`: Starts the development server.
-- `npm run build`: Builds the application for production.
-- `npm test`: Runs the tests.
-- `npm run eject`: Ejects the Create React App configuration.
+- `npm start`: Launch development server
+- `npm run build`: Create production build
+- `npm test`: Run tests
+- `npm run eject`: Eject CRA configuration
 
 ### Backend
 
-- `streamlit run app.py`: Starts the Streamlit application.
+- `chainlit run app.py`: Start the Chainlit application
 
-## Dependencies
+## Contributing 
 
-### Frontend
+Feel free to contribute to making Ashley even better! Whether it's adding new features, improving responses, or enhancing the kawaii aesthetics, all contributions are welcome!
 
-- **Production Dependencies**:
-  - `@react-pdf/renderer`
-  - `axios`
-  - `bootstrap`
-  - `react`
-  - `react-dom`
-  - `react-github-calendar`
-  - `react-icons`
-  - `react-parallax-tilt`
-  - `react-router-dom`
-  - `react-tsparticles`
-  - `typewriter-effect`
-  - `web-vitals`
-- **Development Dependencies**:
-  - `@testing-library/jest-dom`
-  - `@testing-library/react`
-  - `@testing-library/user-event`
 
-### Backend
-
-- `streamlit`
-- `huggingface_hub`
-- `textblob`
-- `langchain`
-
-![Cover Photo](images/img2.png)
-- `python-dotenv`
